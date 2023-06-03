@@ -25,14 +25,14 @@ class BinaryTree {
     let result = [];
 
     function traverse(node) {
-      this.value;
+      node(this);
 
       if (this.left) {
-        this.left.traverse(node);
+        this.left.traverse(this);
       }
 
       if (this.right) {
-        this.right.traverse(node);
+        this.right.traverse(this);
       }
     }
 
@@ -41,14 +41,8 @@ class BinaryTree {
 
     result.push(myNode);
 
-    //traverse( e => result.push(e.value))
-
     return result;
   }
 }
 
 module.exports = BinaryTree;
-/*Primero hay que recorrer el árbol
-¿ Por qué no me llega ningún valor dentro de node?
-Luego hay que poner los nodos recorridos dentro del array
-*/
