@@ -19,3 +19,18 @@ label {
 input {
   display: block;
 }
+
+.list-item {
+  color: red;
+}
+
+img {
+  height: 100px;
+  border: solid 2px black;
+}
+
+div {
+  height: 100px;
+  width: 100px;
+  border: solid 2px black;
+}
